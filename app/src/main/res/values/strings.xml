@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Triage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="patient">hcn, patient name dob</string>
+    <string name="updateSymptoms">Update Symptoms</string>
+    <string name="updateVitalSigns">Update Vital Signs</string>
+    <string name="load">Load</string>
+    <string name="look_up">Look Up</string>
+    <string name="phcn">Health Card Number</string>
+    <string name="instruc_input">Look Up A Patient</string>
+    <string name="mk_new_vis_rec">New Visit Record</string>
+    <string name="vis_recs">View Visit Records</string>
+    <string name="syms_input_instructions">Please list the symptoms observed in the patient in the textbox below</string>
+    <string name="update">Update</string>
+    <string name="vs_input_instructions">Input Patient Vital Signs</string>
+    <string name="title_activity_patient_profile">Patient Profile</string>
+    <string name="title_activity_avisit_record">Visit Record</string>
+    <string name="cvs">current vital signs</string>
+    <string name="csyms">current symptoms</string>
+    <string name="rvs">recorded vital signs</string>
+    <string name="rsyms">recorded symptoms</string>
+    <string name="title_activity_updating_vital_signs">Update Vital Signs</string>
+    <string name="pa">Patient Age</string>
+    <string name="tidc">Temperature in Degrees Celsius</string>
+    <string name="hr">Heart Rate</string>
+    <string name="sbp">Systolic Blood Pressure</string>
+    <string name="dbp">Diastolic Blood Pressure</string>
+    <string name="title_activity_updating_symptoms">Update Symptoms</string>
+    <string name="patient_data">name, dob, hcn, etc</string>
+    <string name="title_activity_create_visit_record">CreateVisitRecord</string>
+    <string name="title_activity_view_visit_records">ViewVisitRecordsActivity</string>
+    <string name="title_activity_view_visit_record">ViewVisitRecord</string>
+    <string name="title_activity_login_in">Login</string>
+    <string name="title_activity_log_in">Login</string>
+    <string name="login">login</string>
+    <string name="user">Username</string>
+    <string name="password">Password</string>
+    <string name="loginbutton">Log In</string>
+    <string name="vital_signs">Vital Signs</string>
+    <string name="age">Age</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Diastolic_Blood_Pressure">Diastolic Blood Pressure</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_look_up">LookUpActivity</string>
+    <string name="title_activity_nurse">NurseActivity</string>
+    <string name="title_activity_create_patient_record">CreatePatientRecord</string>
+    <string name="title_activity_record_prescription">RecordPrescription</string>
+    <string name="title_activity_patients_not_seen">PatientsNotSeenActivity</string>
+    <string name="title_activity_view_avisit_record">ViewAVisitRecordActivity</string>
+    <string name="cprage">Age</string>
+    <string name="medication">Medication:</string>
+    <string name="med">Medication Name</string>
+    <string name="med_instructions">Instructions:</string>
+    <string name="viewPrescriptions">View Prescriptions</string>
+    <string name="recordPrescriptions">Record Prescriptions</string>
+    <string name="med_instruct_instruct">Insert instructions for medication in the space provided</string>
+    <string name="title_activity_view_prescriptions">ViewPrescriptionsActivity</string>
+    <string name="title_activity_access_urgent_patient_list">AccessUrgentPatientListActivity</string>
+
+</resources>

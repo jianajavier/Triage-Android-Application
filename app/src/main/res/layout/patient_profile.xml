@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.PatientProfileActivity" >
+
+    <TextView
+        android:id="@+id/tv_hcn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_bod"
+        android:layout_below="@+id/tv_bod"
+        android:text="Health Card Number:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_patientBod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_bod"
+        android:layout_alignLeft="@+id/tv_patientName"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_patientHCN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_hcn"
+        android:layout_alignBottom="@+id/tv_hcn"
+        android:layout_alignLeft="@+id/tv_patientBod"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_patientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_name"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/tv_hcn"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_bod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:text="Birth Date:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    
+
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewPrescription"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:text="Name:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/pp_b_recordPrescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pp_b_save"
+        android:layout_below="@+id/b_viewPrescription"
+        android:onClick="navigateToRecordPrescription"
+        android:text="@string/recordPrescriptions"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/b_viewPrescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pp_b_recordPrescription"
+        android:layout_below="@+id/pp_b_viewVisitRecords"
+        android:layout_marginTop="24dp"
+        android:onClick="navigateToViewPrescriptions"
+        android:text="@string/viewPrescriptions"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/pp_b_viewVisitRecords"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b_viewPrescription"
+        android:layout_below="@+id/pp_b_createVisitRecord"
+        android:onClick="navigateToviewVisitRecords"
+        android:text="@string/vis_recs"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/pp_b_createVisitRecord"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pp_b_viewVisitRecords"
+        android:layout_below="@+id/tv_hcn"
+        android:layout_marginTop="26dp"
+        android:onClick="navigateToCreateNewVisitRecord"
+        android:text="@string/mk_new_vis_rec"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/pp_b_save"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pp_b_recordPrescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:onClick="saveToFiles"
+        android:text="Save"
+        android:textSize="15sp" />
+
+</RelativeLayout>

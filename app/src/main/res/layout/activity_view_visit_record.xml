@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ViewVitalSignsRecordActivity" >
+
+    <TextView
+        android:id="@+id/viewVisitRecordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Vital Signs Record"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/cpr_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewVisitRecordTitle"
+        android:layout_below="@+id/viewVisitRecordTitle"
+        android:layout_marginTop="20dp"
+        android:text="Temperature"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cpr_tv_bod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cpr_tv_name"
+        android:layout_below="@+id/cpr_tv_name"
+        android:layout_marginTop="20dp"
+        android:text="Systolic Blood Pressure"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cpr_tv_hcn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cpr_tv_bod"
+        android:layout_below="@+id/cpr_tv_bod"
+        android:layout_marginTop="20dp"
+        android:text="Diastolic Blood Pressure"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cpr_tv_hcn"
+        android:layout_below="@+id/cpr_tv_hcn"
+        android:layout_marginTop="20dp"
+        android:text="Heart Rate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/vvr_sbp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cpr_tv_hcn"
+        android:layout_alignLeft="@+id/vvr_temperature"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/vvr_dbp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/vvr_sbp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/vvr_hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/vvr_dbp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/seenButton"
+        android:layout_alignBottom="@+id/seenButton"
+        android:layout_alignLeft="@+id/textView4"
+        android:text="Seen By Doctor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/vvr_b_update"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_seen"
+        android:layout_below="@+id/seenButton"
+        android:layout_marginTop="37dp"
+        android:onClick="updateVitalSigns"
+        android:text="Update Vital Signs" />
+
+    <Button
+        android:id="@+id/saveAndExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vvr_b_update"
+        android:layout_alignBottom="@+id/vvr_b_update"
+        android:layout_toRightOf="@+id/viewVisitRecordTitle"
+        android:onClick="saveExit"
+        android:text="Save and Exit"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/seenButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/saveAndExit"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="24dp"
+        android:onClick="setSeenTrue"
+        android:text="OK"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/timeSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/seenButton"
+        android:layout_alignBottom="@+id/seenButton"
+        android:layout_alignLeft="@+id/seenButton"
+        android:text="No"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/vvr_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cpr_tv_name"
+        android:layout_alignBottom="@+id/cpr_tv_name"
+        android:layout_alignRight="@+id/seenButton"
+        android:text="TextView" />
+
+</RelativeLayout>

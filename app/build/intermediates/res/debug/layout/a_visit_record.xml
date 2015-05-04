@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.triage.AVisitRecordActivity" >
+
+    <TextView
+        android:id="@+id/txtv_displayInstructionsForVitalSigns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/patient" />
+
+    <TextView
+        android:id="@+id/txtv_currentVitalSigns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtv_displayInstructionsForVitalSigns"
+        android:layout_below="@+id/txtv_displayInstructionsForVitalSigns"
+        android:layout_marginTop="32dp"
+        android:text="@string/cvs" />
+
+    <TextView
+        android:id="@+id/txtv_currentSymptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtv_currentVitalSigns"
+        android:layout_below="@+id/txtv_currentVitalSigns"
+        android:layout_marginTop="39dp"
+        android:text="@string/csyms" />
+
+    <TextView
+        android:id="@+id/txtv_pastVitalSigns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtv_currentSymptoms"
+        android:layout_below="@+id/txtv_currentSymptoms"
+        android:layout_marginTop="39dp"
+        android:text="@string/rvs" />
+
+    <Button
+        android:id="@+id/b_makeNewVitalSignsRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtv_pastVitalSigns"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:text="@string/updateVitalSigns" />
+
+</RelativeLayout>
+<!-- From: file:/Users/jianajavier/AndroidStudioProjects/Triage/app/src/main/res/layout/a_visit_record.xml -->

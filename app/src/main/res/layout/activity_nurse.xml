@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NurseActivity" >
+
+    <Button
+        android:id="@+id/b_goToLookUp"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_createPatientrecord"
+        android:layout_centerHorizontal="true"
+        android:onClick="navigateToLookUp"
+        android:text="Look Up Patient"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/b_accessUrgentPatientList"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_goToLookUp"
+        android:layout_centerHorizontal="true"
+        android:text="View List of Patients Not Seen By Doctor"
+        android:textSize="13sp" 
+        android:onClick = "goToPatientList"/>
+
+    <Button
+        android:id="@+id/b_createPatientrecord"
+        style="?android:attr/buttonStyleToggle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b_goToLookUp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:text="Create Patient Record"
+        android:textSize="13sp" 
+        android:onClick = "createPatientRecord"/>
+    
+</RelativeLayout>
